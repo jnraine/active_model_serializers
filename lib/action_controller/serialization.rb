@@ -45,7 +45,7 @@ module ActionController
       end
     end
 
-    def _render_option_json(resource, options)
+    def _render_with_renderer_json(resource, options)
       serializer = build_json_serializer(resource, options)
 
       if serializer
